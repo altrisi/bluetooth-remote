@@ -35,7 +35,8 @@
             android:roundIcon="@mipmap/remote_control_launcher"
             android:showOnLockScreen="true"
             android:showWhenLocked="true"
-            android:launchMode="singleInstance">
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppComat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
