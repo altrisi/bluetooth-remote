@@ -66,7 +66,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private static final String TAG = "BluetoothTest";
     private static final int REQUEST_CODE_BT_DEVICE_SELECTED = 1;
     static final int MESSAGE_FROM_SCAN_THREAD = 4;
