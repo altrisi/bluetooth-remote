@@ -174,6 +174,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint({"MissingPermission", "ClickableViewAccessibility"})
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
         bluetoothManager = getSystemService(BluetoothManager.class);
