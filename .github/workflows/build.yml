@@ -1,0 +1,21 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: sparkfabrik/android-build-action@v1.0.0
+      with:
+        project-path: .
+        output-path: app.apk
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Compiled artifacts
+        path: app.apk
